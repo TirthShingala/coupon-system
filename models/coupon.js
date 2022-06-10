@@ -13,6 +13,19 @@ const couponSchema = new Schema(
       type: Number,
       required: true,
     },
+    maxDiscount: {
+      type: Number,
+      required: true,
+    },
+    minAmount: {
+      type: Number,
+      required: true,
+    },
+    maxUsage: {
+      type: Number,
+      required: true,
+      default: 1,
+    },
     expiryDate: {
       type: Date,
       required: true,
