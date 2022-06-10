@@ -11,7 +11,7 @@ const paymentSchema = Schema(
     // Customer OB Form
     paymentfor: {
       type: mongoose.Types.ObjectId,
-      ref: "user",
+      ref: "customer",
       required: true,
     },
     // Gateway Name
